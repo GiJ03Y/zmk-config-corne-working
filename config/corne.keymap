@@ -134,10 +134,10 @@
         default_layer {
             display-name = "base";
             bindings = <
-&kp ESCAPE    &kp Q          &kp W         &kp E                 &kp R              &kp T            &kp Y          &kp U          &kp I          &kp O         &kp P             &kp DEL
-&kp CLCK      &hrml LSHFT A  &hrml LALT S  &hrml LCTRL D         &hrml LCMD F       &kp G            &kp H          &hrmr RCMD J   &hrmr RCTRL K  &hrmr RALT L  &hrmr RSHFT SEMI  &kp SQT
-&kp LEFT_WIN  &kp Z          &kp X         &kp C                 &hrml LSHFT V      &kp B            &kp N          &hrmr RSHFT M  &kp COMMA      &kp DOT       &kp FSLH          &kp BSLH
-                                           &lthp 1 LEFT_CONTROL  &lthp 2 BACKSPACE  &lthp 0 SPACE    &lthp 0 SPACE  &lthp 2 RET    &lthp 1 TAB
+&kp ESCAPE    &kp Q          &kp W         &kp E             &kp R              &kp T            &kp Y              &kp U          &kp I          &kp O         &kp P             &kp DEL
+&kp LSHIFT    &hrml LSHFT A  &hrml LALT S  &hrml LCTRL D     &hrml LCMD F       &kp G            &kp H              &hrmr RCMD J   &hrmr RCTRL K  &hrmr RALT L  &hrmr RSHFT SEMI  &kp SQT
+&kp LEFT_WIN  &kp Z          &kp X         &kp C             &hrml LSHFT V      &kp B            &kp N              &hrmr RSHFT M  &kp COMMA      &kp DOT       &kp FSLH          &kp BSLH
+                                           &lthp 1 CAPSLOCK  &lthp 2 BACKSPACE  &lthp 0 SPACE    &kp RIGHT_CONTROL  &lthp 2 RET    &lthp 1 TAB
             >;
         };
 
@@ -156,8 +156,17 @@
             bindings = <
 &kp LG(N1)  &kp EXCL      &kp AT        &kp HASH         &kp DLLR      &kp PRCNT       &kp LPAR  &kp RPAR  &kp UNDER  &kp PLUS   &kp RG(N1)  &kp RG(N2)
 &kp LG(N2)  &kp CARET     &kp AMPS      &kp KP_ASTERISK  &kp LPAR      &kp RPAR        &kp LBKT  &kp RBKT  &kp MINUS  &kp EQUAL  &kp BSLH    &kp RG(N3)
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &kp LBKT  &kp RBKT  &kp LT     &kp GT     &kp PIPE    &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &kp LBKT  &kp RBKT  &kp LT     &kp GT     &kp PIPE    &kp QUESTION
                                         &trans           &trans        &trans          &trans    &trans    &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
